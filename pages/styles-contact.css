@@ -1,0 +1,58 @@
+
+
+.section-contact {
+  min-height: 88vh;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.box-forms {
+  background-color: #0e0e0e;
+  border-radius: .5rem;
+  border: 0.1rem solid #202020;
+  padding: 10px;
+  outline: none;
+}
+
+.box-forms:focus {
+  border: 0.1rem solid #ffc400;
+}
+
+.button-forms {
+  color: #ebebeb;
+  text-align: center;
+  background-color: #202020;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.button-forms:hover {
+  color: #141414 !important;
+  background-color: #ffc400;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0.2rem solid #ffc400;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #ffc400 !important;
+}
+
+.bgjh input{
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
+  font-weight: 400;
+}
