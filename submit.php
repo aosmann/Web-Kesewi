@@ -11,9 +11,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $headers = "From: $email";
 
   if (mail($to, $subject, $body, $headers)) {
-    echo "<script>alert('Thank you for contacting us!');</script>";
+    echo "yess";
+    header('Location: index.html');
+    exit;
   } else {
-    echo "<script>alert('There was an error sending your message. Please try again later.');</script>";
+    echo "Your submission has an error!";
   }
 }
 ?>

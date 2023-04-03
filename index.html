@@ -243,31 +243,27 @@
         </div>
       
         <div class="text-right">
-          <button type="submit" class="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-white tracking-widest hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-500 active:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none transition ease-in-out duration-150">
+          <button id="alert-buttwon" type="submit" class="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-white tracking-widest hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-500 active:bg-indigo-800 disabled:opacity-50 disabled:pointer-events-none transition ease-in-out duration-150">
             Submit
           </button>
         </div>
       </form>
-      
-      
 
 
-
-           <script>
-        function setMaxHeight(element) {
-          // Set maximum height of element to 80% of screen height
-          const maxHeight = window.innerHeight * 0.8;
-          element.style.maxHeight = `${maxHeight}px`;
-        }
-      
-        // Call setMaxHeight for each section element
-        const sectionElements = document.querySelectorAll("section");
-        sectionElements.forEach((element) => {
-          setMaxHeight(element);
-        });
+      <script>
+          function setMaxHeight(element) {
+            // Set maximum height of element to 80% of screen height
+            const maxHeight = window.innerHeight * 0.8;
+            element.style.maxHeight = `${maxHeight}px`;
+          }
+        
+          // Call setMaxHeight for each section element
+          const sectionElements = document.querySelectorAll("section");
+          sectionElements.forEach((element) => {
+            setMaxHeight(element);
+          });
       </script>
 
-      <script src="form-validation.js"></script>  
       
       
 </body>
