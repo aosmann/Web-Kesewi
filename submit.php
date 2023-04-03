@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $message = $_POST["message"];
 
   // send email to appropriate address
-  $to = "osman@kesewi.com";
+  $to = "contact@kesewi.com";
   $subject = "New message from contact form";
   $body = "Name: $name\nEmail: $email\nMessage: $message";
   $headers = "From: $email";
