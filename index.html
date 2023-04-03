@@ -266,6 +266,14 @@
           setMaxHeight(element);
         });
       </script>
+
+      <script>
+        <?php if (isset($success_message)) { ?>
+          alert("<?php echo $success_message; ?>");
+        <?php } elseif (isset($error_message)) { ?>
+          alert("<?php echo $error_message; ?>");
+        <?php } ?>
+      </script>
       
       
 </body>
