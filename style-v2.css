@@ -78,3 +78,9 @@ h1, p {
     z-index: -1;
   }
   
+  .glass {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+  }
+
+  

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kesewi Branding Consultancy">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-v2.css">
+  </head>
+  <body>
+
+    <header class="text-white min-h-[300px] fixed top-0 w-full z-10" style="background-color: rgba(0, 0, 0, 0.534);">
+        <div class="overlay"></div>
+          <nav class="container mx-auto flex items-center justify-center min-h-10">
+            <div class="flex items-center py-3">
+              <a href="/"><img class="h-4 pr-16" src="https://i.ibb.co/jv5xf6k/logo-light.png" alt="Logo" class="h-8 mr-8"></a>
+              <ul class="hidden md:flex items-center space-x-8 gap-10 text-sm font-extralight opacity-90">
+                <li><a href="index.html#ai-power" class="hover:text-gray-400">AI Power</a></li>
+                <li><a href="#" class="hover:text-gray-400">Branding</a></li>
+                <li><a href="#" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+              </ul>
+            </div>
+            <button class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-md md:hidden">Contact</button>
+          </nav>
+      </header>
+
+
+    <div class="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8 bg-center bg-cover" style="background-image: url(https://images.unsplash.com/photo-1543053976-5fd9336b6de0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBsaW5lc3xlbnwwfHwwfHw%3D&w=1000&q=80);">
+        <div class="glass mt-8 sm:mx-auto sm:w-full sm:max-w-md rounded-xl" >
+          <div class="py-20 px-10 sm:rounded-lg sm:px-10 max-w-md m-auto">
+            <form method="POST" action="submit.php">
+              <div>
+                <p for="name" class="block text-sm font-medium text-white">
+                  Full Name
+                </p>
+                <div class="mt-1">
+                  <input id="name" name="name" type="text" required autocomplete="name" class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 bg-transparent border-2 outline-none rounded-md"style="border-color: rgba(243, 243, 243, 0.421);">
+                </div>
+              </div>
+      
+              <div class="mt-6">
+                <p for="email" class="block text-sm font-medium text-white">
+                  Email Address
+                </p>
+                <div class="mt-1">
+                  <input id="email" name="email" type="email" required autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 bg-transparent border-2 outline-none rounded-md"style="border-color: rgba(243, 243, 243, 0.421);"">
+                </div>
+              </div>
+      
+              <div class="mt-6">
+                <p for="message" class="block text-sm font-medium text-white">
+                  Message
+                </p>
+                <div class="mt-1">
+                  <textarea id="message" name="message" required class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 border-gray-300 bg-transparent border-2 outline-none h-full rounded-md"style="border-color: rgba(243, 243, 243, 0.421);""></textarea>
+                </div>
+              </div>
+      
+              <div class="mt-6">
+                <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
+    <div id="sent-alert" class="fixed top-0 left-0 w-full bg-green-500 text-white text-center py-3" style="display: none;">
+      Thank you for your message! We will get back to you soon.
+    </div>
+
+    <script src="submit.js"></script>
+  </body>
+</html>
