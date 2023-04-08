@@ -1,0 +1,245 @@
+
+
+
+@media (max-width: 576px) {
+  .section-reel {
+    display: none !important;
+  }
+  .more {
+    display: none !important;
+  }
+  .testimonials {
+    display: none !important;
+  }
+  .clients .container-fluid {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+  .sub-text{
+    display: none !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1600px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 577px) {
+  .section-hero {
+    height: 100vh !important;
+  }
+  .section-projects {
+    padding-top: 50px !important;
+  }
+  .clients .container-fluid {
+    display: none;
+  }
+  .idea-icon img{
+    max-width: 10px !important;
+  }
+}
+html,
+body,
+.container-fluid {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: 0.3s ease;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hr-sm {
+  max-width: 70px !important;
+  background-color: #ffc400;
+  border: 2.5px solid #ffc400;
+  border-radius: 0px;
+  opacity: 100%;
+  margin-top: 0px;
+}
+
+cursor {
+  overflow: hidden;
+}
+
+:root .bg-dark{
+  background: #0e0e0e !important;
+}
+
+html,
+body {
+  max-width: 100%;
+  background-color: #0e0e0e;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: transparent !important;
+  text-decoration: none;
+  margin: auto;
+}
+
+.navbar {
+  right: 0px;
+  left: 0px;
+  padding: 0rem 2rem;
+  top: 0px;
+  background-color: #11111198;
+  padding-top: 0% !important;
+  padding-bottom: 0% !important;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #2b2b2b;
+  /*filter: drop-shadow(1px 1px 50px rgba(0, 0, 0, 0.808));*/
+}
+
+.navbar-brand img{
+  max-width: 120px;
+}
+
+.nav-link p{
+  font-size: 15px;
+  opacity: 50%;
+}
+
+.nav-link p:hover {
+  color: white !important;
+  opacity: 100%;
+}
+
+.nav-link:focus {
+  color: black !important;
+  opacity: 100%;
+}
+
+br {
+  height: 120px;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+li{
+  list-style-type: none;
+}
+
+:root h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "SF Pro", sans-serif;
+  color: #f5f5f5;
+}
+
+h2 {
+  color: #f5f5f5;
+  font-weight: 300 !important;
+  font-size: 1.7rem !important;
+}
+
+h3 {
+  color: #f5f5f5;
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  font-family: "SF Pro", sans-serif;
+}
+
+h4 {
+  color: #f5f5f5;
+  font-weight: 600 !important;
+  font-size: 3rem !important;
+  font-family: "SF Pro", sans-serif;
+}
+
+p {
+  font-size: 17px;
+  font-family: "SF Pro", sans-serif;
+  color: #f5f5f5;
+  font-weight: 200;
+}
+
+.gradient {
+  background-image: linear-gradient(to right, #ffc400, #ff7300);
+  padding: 0.15rem;
+}
+
+
+.highlight-yellow {
+  padding: 10px;
+  line-height: 10px;
+  background: #ebebeb00 !important;
+  border:  1px solid #ffc400 !important;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.2s;
+  margin: 6px;
+  color: #f5f5f5 !important;
+  
+}
+
+.highlight-yellow:hover {
+  color: black !important;
+  background: #ffc400 !important;
+  transition: all 0.2s;
+  transform: scale(1.05);
+}
+
+.highlight-yellow-dark {
+  color: #646464 !important;
+  padding: 10px;
+  line-height: 10px;
+  background: #2b2b2b !important;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.2s;
+  margin: 6px;
+}
+
+.highlight-yellow-dark:hover {
+  color: black;
+  background: #ffc400 !important;
+  transition: all 0.2s;
+  transform: scale(1.05);
+}
+
+.footer {
+  border-top: 1px solid #2b2b2b;
+  padding: 0px !important;
+}
+
+.container{
+  max-width: 1350px !important;
+}
+
+.o-0 { opacity: 0; }
+.o-25 { opacity: .25; }
+.o-50 { opacity: .5; }
+.o-75 { opacity: .75; }
+.o-100 { opacity: 1; }
+
+.idea-icon img{
+  max-width: 60px;
+  padding-bottom: 20px;
+}
+
+.idea-icon{
+  margin-bottom: 15px;
+}
+
+html.sr .fader {
+  visibility: hidden;
+}

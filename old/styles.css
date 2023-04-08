@@ -1,0 +1,281 @@
+
+@media (max-width: 576px){
+  .pr img{
+    opacity: 1 !important;
+  }
+  .bg-blur{
+    filter: blur(20px) !important;
+    opacity: 0.2 !important;
+  }
+  .grid-box{
+    min-height: none !important;
+  }
+}
+
+.section-hero {
+  margin: 0;
+  height: 90vh;
+  width: 100%;
+
+}
+
+.section-projects {
+  background-color: #0e0e0e;
+}
+
+.section-about {
+  height: 100vh ;
+}
+
+
+.pr {
+  overflow: hidden;
+  min-height: 600px;
+
+}
+
+.pr img {
+  border-bottom: none;
+  transition: 0.3s ease-out;
+  width: 100%;
+  opacity: 0.7;
+
+}
+
+.pr:hover img {
+  transform: scale(1.07);
+  transition: 0.3s ease-out;
+  opacity: 1;
+
+}
+
+.pr-text {
+  padding-top: 15px;
+  font-size: 1.5rem !important;
+}
+
+.pr-logo{
+  min-height: 97vh !important;
+}
+
+.pr-name{
+  min-height: 300px;
+}
+
+.section-services {
+  background-color: #0e0e0e;
+  padding: 0px 0px;
+}
+
+.img {
+  min-height: 580px;
+}
+
+.clients {
+  background-color: #0e0e0e;
+  filter: drop-shadow(0px -20px 50px #0e0e0e);
+  height: 10vh;
+}
+
+.testimonials {
+  background-color: #161616;
+  border-radius: 2.5rem;
+
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ffffff80 !important;
+
+  height: 0.3rem !important;
+  opacity: 0.2 !important;
+}
+
+.carousel-indicators .active {
+  opacity: 1 !important;
+  background-color: #ffffff !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+}
+
+.container-image {
+  position: relative;
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.middle-text {
+  min-height: 600px;
+  background-color: #0e0e0e;
+}
+
+.bg-unispace {
+  background-color: #002521;
+}
+
+.bg-sf {
+  background-color: #051316;
+}
+
+.color-sf{
+
+  background-color: #54bfa6;
+
+}
+
+.bg-samsa {
+  background-color: #111111;
+}
+
+.bg-samsa2 {
+  background-color: #270f0f;
+}
+
+.color-samsa {
+color: #E81D25;
+background-color: #E81D25;
+}
+
+.bg-kerwen{
+  background-color: #130F20;
+}
+
+.bg-adas-light {
+  background-color: #f3f3f3;
+}
+
+.bg-adas-dark {
+  background-color: #281119;
+}
+
+.bg-blur{
+  position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    width: 60rem !important;
+    opacity: 19%;
+    filter: blur(50px);
+}
+
+.bg-blur-absolute{
+  position: absolute;
+  left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    width: 60rem !important;
+    max-width: 100%;
+    opacity: 19%;
+    filter: blur(50px);
+}
+
+.bg-time{
+  background-color: #071f15;
+}
+
+.bg-star{
+  background-color: #0b9dd9;
+}
+
+.bg-star-dark{
+  background-color: #1b2226;
+}
+
+.bg-star-dark2{
+  background-color: #071922;
+}
+
+.bg-huxo{
+  background: url(./images/bg-huxo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-box{
+  height: auto;
+  border: 1rem solid #0e0e0e;
+  border-radius: 2.5rem;
+}
+
+.img-nologo{
+  background-image: url(./images/WhyUs/img-nologo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img-meta{
+  background-image: url(./images/WhyUs/img-meta.gif);
+  background-position: center;
+  background-size: cover;
+}
+
+.img-softinnovas{
+  background-image: url(./images/WhyUs/img-softinnovas.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img-cola{
+  background-image: url(./images/WhyUs/img-cola.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.video-reel{
+  position: relative;
+width: 100%;
+height: 90vh;
+background-image: url(/_nuxt/img/holder.3b1b0b4.jpg);
+background-position: 50%;
+background-size: cover;
+}
+
+.video-reel video{
+  position: absolute;
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+display: block;
+}
+
+.gallery-cont{
+  grid-auto-columns: 100px;
+}
+
+.gallery-cont li{
+  padding: 0%;
+  height: max-content !important;
+}
+
+ul{
+  -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-gap: 0rem;
+}
+
+.fader{
+  transition: all ease;
+}
+
+.gradient-bottom{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 2;
+  width: 100%;
+  background: linear-gradient(180deg,rgba(0, 0, 0, 0),black,black);
+}
