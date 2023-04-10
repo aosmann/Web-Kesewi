@@ -1,0 +1,144 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Kesewi Team">
+        <title>Kesewi | Jake Ratermann</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../style-v2.css">
+      </head>
+      <body>
+    
+        <header class="text-white min-h-[300px] fixed top-0 w-full z-10" style="background-color: rgba(0, 0, 0, 0.534);">
+            <div class="overlay"></div>
+            <nav class="container mx-auto flex items-center justify-between md:justify-center lg:justify-center xl:justify-center min-h-10 px-7">
+              <div class="flex items-center py-3">
+                  <a href="/"><img class="h-4 pr-16" src="https://i.ibb.co/jv5xf6k/logo-light.png" alt="Logo" class="h-8 mr-8"></a>
+                  <ul class="hidden md:flex items-center space-x-8 gap-10 text-sm font-extralight opacity-90">
+                    <li><a href="../index.html" class="hover:text-gray-400">AI Power</a></li>
+                    <li><a href="../index.html#branding" class="hover:text-gray-400">Branding</a></li>
+                    <li><a href="../index.html#projects" class="hover:text-gray-400">Projects</a></li>
+                    <li><a href="../index.html#services" class="hover:text-gray-400">Services</a></li>
+                    <li><a href="../contact.html" class="hover:text-gray-400">Contact</a></li>
+                  </ul>
+                </div>
+                <button class="bg-#00FF00 hover:bg-gray-700 text-white font-semibold py-3 px-4 rounded-md md:hidden"><a href="../contact.html" class="text-sm font-extralight opacity-90">Contact</a></button>
+              </nav>
+          </header>
+
+          <div class="section-about flex bg-dark h-screen">
+            <div class="container mx-auto flex items-center">
+              <div class="grid grid-cols-1 md:grid-cols-2 m-auto gap-10">
+                <div class="col-md-4 mx-auto max-w-lg py-5 px-10">
+                  <h2 class="text-white text-2xl pb-2">Kesewi Branding Consultancy</h2>
+                  <span class="absolute bottom-100 right-50 h-1 bg-yellow-500 block m-auto animate-fade-in" style="width: 40px; animation-delay: 0.5s; animation-duration: 2s;"></span>
+                </div>
+                <div class="col-md-8 mx-auto max-w-lg py-5 px-10">
+                  <h2 class="text-white text-2xl">JAKE RATERMANN</h2>
+                  <p class="mb-0 text-gray-300 gradient-text">Brand Ambassador</p>
+                  <br>
+                  <p class="text-gray-300">phone: +1 (760) 670-8283
+                    <br> email: jake@kesewi.com
+                    <br>
+                    <br> <a href="https://www.linkedin.com/company/kesewi/?viewAsMember=true" class="text-blue-300 hover:text-blue-500">Linkedin →</a>
+                    <br>
+                    <br> 2918 Avenue i, Brooklyn, NY
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    
+          <div id="services" class="bg-dark py-16 container text-white m-auto">
+            <div class="my-16">
+              <div class="text-center fader pb-14">
+                <h1 class="text-4xl font-bold uppercase">Drop us a line.</h1>
+              </div>
+              <div class="flex flex-wrap justify-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 max-w-2xl m-auto gap-8">
+                <div class="p-5 fader border-2 rounded-lg" style="border-color: rgb(39, 39, 39);">
+                  <h2 class="text-3xl font-bold mb-2">Contact</h2>
+                  <form method="POST" action="../submit.php">
+                    <div>
+                      <p for="name" class="block text-sm font-medium text-white">
+                        Full Name
+                      </p>
+                      <div class="mt-1">
+                        <input id="name" name="name" type="text" required autocomplete="name" class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 bg-transparent border-2 outline-none rounded-md"style="border-color: rgba(243, 243, 243, 0.421);">
+                      </div>
+                    </div>
+            
+                    <div class="mt-6">
+                      <p for="email" class="block text-sm font-medium text-white">
+                        Email Address
+                      </p>
+                      <div class="mt-1">
+                        <input id="email" name="email" type="email" required autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 bg-transparent border-2 outline-none rounded-md"style="border-color: rgba(243, 243, 243, 0.421);"">
+                      </div>
+                    </div>
+            
+                    <div class="mt-6">
+                      <p for="message" class="block text-sm font-medium text-white">
+                        Message
+                      </p>
+                      <div class="mt-1">
+                        <textarea id="message" name="message" required class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 border-gray-300 bg-transparent border-2 outline-none h-full rounded-md"style="border-color: rgba(243, 243, 243, 0.421);""></textarea>
+                      </div>
+                    </div>
+            
+                    <div class="mt-6">
+                      <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+    
+          <div id="footer" class="py-16 border-t-2" style="border-color: rgb(39, 39, 39);">
+            <div class="container mx-auto">
+             <div class="pb-2">
+              <img class="h-6 mx-auto md:mx-0 lg:mx-0 xl:mx-0" src="../images/logo-gray.png" alt="Logo">
+             </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                <div class="text-white rounded-lg flex flex-col order-3 md:order-1 lg:order-1 xl:order-1">
+                   <div class="p-4 flex-grow text-center md:text-left lg:text-left xl:text-left">
+                    <p class="text-white opacity-50 pb-2">Kesewi Branding Consultancy</h2>
+                    <p class="text-white opacity-50 pb-2">2918 Avenue i, Brooklyn, NY</p>
+                    <p class="text-white opacity-50">© 2022 Kesewi Branding Colsultancy</p>
+                  </div>
+                </div>
+                <div class="text-white rounded-lg content-center items-center order-2 md:order-2 lg:order-2 xl:order-2">
+                  <div class="p-4 flex-grow list-none opacity-50 text-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-2">
+                    <li><a href="#" class="hover:text-gray-400">AI Power</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Branding</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Projects</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+                  </div>
+               </div>
+               <div class="text-white rounded-lg flex flex-col items-center order-1 md:order-3 lg:order-3 xl:order-3">
+                  <div class="p-4 flex-grow text-center text-white opacity-50 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-2">
+                    <a href="mailto:contact@kesewi.com"><p class="hover:text-gray-400">contact@kesewi.com</p></a>
+                    <a href="https://www.linkedin.com/company/kesewi" target="_blank"><p class="hover:text-gray-400">Linkedin/Kesewi</p></a>
+                    <a href="https://www.instagram.com/thekesewi/" target="_blank"><p class="hover:text-gray-400">Instagram/thekesewi</p></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        <div id="sent-alert" class="fixed top-0 left-0 w-full bg-green-500 text-white text-center py-3" style="display: none;">
+          Thank you for your message! We will get back to you soon.
+        </div>
+    
+        <script src="../submit.js"></script>
+      </body>
+    </html>
+    
