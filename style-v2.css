@@ -21,6 +21,7 @@ h1, p {
 
   body{
 	background: #000000;
+  overflow-x: hidden;
   }
 
   .logo {
@@ -85,7 +86,7 @@ h1, p {
 
 
 
-  #my-element-1 {
+  #my-element-1  {
     max-width: 20rem;
     font-size: 24px;
     font-weight: bold;
@@ -96,6 +97,6 @@ h1, p {
     background-color: #fff;
   }
   
+
   
-  
-  
+  //grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4
