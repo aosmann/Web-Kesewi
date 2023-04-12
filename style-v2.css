@@ -80,3 +80,22 @@ h1, p {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
   }
+
+
+
+
+
+  #my-element-1 {
+    max-width: 20rem;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  
+  
+  

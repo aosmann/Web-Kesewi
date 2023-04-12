@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style-v2.css">
 
+
 </head>
 <body>
 
-    <header class="text-white min-h-[300px] fixed top-0 w-full z-10" style="background-color: rgba(0, 0, 0, 0.534);">
+<header class="text-white min-h-[300px] fixed top-0 w-full z-10" style="background-color: rgba(0, 0, 0, 0.534);">
         <div class="overlay"></div>
           <nav class="container mx-auto flex items-center justify-between min-h-10 px-7">
             <div class="flex items-center py-3">
@@ -27,28 +28,60 @@
             
             <button class="bg-#00FF00 hover:bg-gray-700 text-white font-semibold py-3 px-4 rounded-md"><a href="contact.html" class="text-sm font-extralight opacity-90">Contact</a></button>
           </nav>
-      </header>
+</header>
+
+<section class="bg-gray-100 py-8 h-screen">
+  <div class="container mx-auto px-4">
+    <div class="relative">
+      <img src="./images/client-1.png" id="my-elemenst" alt="Image 1" class="absolute top-0 left-0">
+      <!-- <img src="./images/client-2.png" id="element2" alt="Image 2" class="my-element m-auto w-32 h-60">
+      <img src="./images/client-3.png" id="element3" alt="Image 3" class="my-element m-auto w-32 h-32"> -->
+    </div>
+  </div>
+</section>
+
+<div id="my-element-1" class="ml-0">Hello, World!</div>
 
 
-    <div class="w-screen" style="background-image: url(/images/tool-chatgpt.jpg);">
-        <div class="relative w-full h-screen flex justify-center items-center backdrop-blur-lg blur-text">
-            <div class="relative">
-                <h1 class="text-4xl font-bold text-transparent bg-gradient-to-br from-purple-500 to-pink-500 bg-clip-text blur-md">Hello</h1>
-              </div>
-                      </div>
-          
-        </div>
-        <div class="w-screen" style="background-image: url(/images/tool-chatgpt.jpg);">
-            <div class="relative w-full h-screen flex justify-center items-center backdrop-blur-lg blur-text">
-                <div class="relative">
-                    <h1 class="text-4xl font-bold text-transparent gradient-text to-pink-500 bg-clip-text blur-md">Hello</h1>
-                  </div>
-                          </div>
-              
-            </div>
+  <script>
+    const element = document.getElementById("my-element-1");
 
+document.addEventListener("mousemove", function(event) {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  
+  const elementX = element.offsetLeft + (element.offsetWidth / 2);
+  const elementY = element.offsetTop + (element.offsetHeight / 2);
+  
+  const distanceX = mouseX - elementX;
+  const distanceY = mouseY - elementY;
+  
+  const moveX = distanceX * 0.01;
+  const moveY = distanceY * 0.01;
+  
+  element.style.transform = "translate(" + moveX + "px, " + moveY + "px)";
+});
+  </script>
 
+  <script>
+    const element = document.getElementById("my-element-2");
 
+document.addEventListener("mousemove", function(event) {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  
+  const elementX = element.offsetLeft + (element.offsetWidth / 2);
+  const elementY = element.offsetTop + (element.offsetHeight / 2);
+  
+  const distanceX = mouseX - elementX;
+  const distanceY = mouseY - elementY;
+  
+  const moveX = distanceX * 0.01;
+  const moveY = distanceY * 0.01;
+  
+  element.style.transform = "translate(" + moveX + "px, " + moveY + "px)";
+});
+  </script>
 
 </body>
 </html>
