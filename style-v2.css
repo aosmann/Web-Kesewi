@@ -102,5 +102,18 @@ h1, p {
   }
   
 
+  .typewriter-animation {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: typing 3s steps(6) 1s forwards;
+  }
   
-  //grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 1ch;
+    }
+  }
