@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style-v2.css">
 
+
 </head>
 <body>
     
-  <header class="text-white min-h-[300px] fixed top-0 w-full z-10" style="background-color: rgba(0, 0, 0, 0.534);">
+  <header class="text-white min-h-[300px] fixed top-0 w-full z-10 glass" style="background-color: rgba(0, 0, 0, 0.534);">
     <div class="overlay"></div>
       <nav class="container mx-auto flex items-center justify-between md:justify-center lg:justify-center xl:justify-center min-h-10 px-7">
         <div class="flex items-center py-3">
@@ -29,247 +30,378 @@
   </header>
 
 
-    <section id="hero" class="h-screen flex justify-center pb-8 items-center min-h-screen bg-black ">
-        <div class="text-center relative">
-          <h1 class="text-white text-5xl sm:text-6xl font-extrabold leading-15 uppercase mb-4 animate-fade-in mx-auto px-4 max-w-screen-sm " style="animation-delay: 0.2s;">Building your inspiring brand</h1>
-          <h1 class="text-white text-base font-light  uppercase mb-4 animate-fade-in px-6 max-w-screen-sm" style="animation-delay:0.2s; animation-duration:1.5s;">It's the perception of your business held by your audience</h1>
-          <span class="absolute bottom-0 left-0 right-0 h-1 bg-yellow-500 block m-auto animate-fade-in" style="width: 40px; animation-delay: 0.5s; animation-duration: 2s;"></span>
-        </div>
-    </section>
+  <section id="hero" class="h-screen flex justify-center pb-8 items-center min-h-screen overflow-x-hidden">
+    <div class="absolute animate-fade-in max-w-screen" style="z-index: -1;">
+      <div class="max-w-screen bg-cover scale-100 lg:scale-125 flex">
+        <img src="./images/gradient-elements/line.webp" id="my-element-2" class="animate-pulse" style="animation-duration:5s;">
+      </div>
+    </div>
+    <div class="text-center relative">
+      <h1 class="text-white text-5xl sm:text-6xl font-extrabold leading-15 uppercase mb-4 animate-fade-in mx-auto px-4 max-w-screen-sm lg:max-w-screen-md" style="animation-delay: 0.2s;">Building your inspiring brand</h1>
+      <h1 class="text-white text-base font-light uppercase mb-4 animate-fade-in px-6 max-w-screen-sm mx-auto" style="animation-delay:0.2s; animation-duration:1s;">It's the perception of your business held by your audience</h1>
+      <span class="absolute bottom-0 left-0 right-0 h-1 bg-yellow-500 block m-auto animate-fade-in" style="width: 40px; animation-delay: 0.5s; animation-duration: 1s;"></span>
+    </div>
+  </section>
+  
 
-    <div id="clients" class="bg-black py-0 items-center opacity-50 pb-11">
+  
+  <div id="clients" class="animate-fade-in py-0 items-center mb-11 z-10 glass max-w-screen-lg mx-auto rounded-lg " style="border: 1px solid rgba(255, 255, 255, 0.082); background-color: rgba(255, 255, 255, 0.068);margin-top: -6.2rem; animation-delay:1.2s; animation-duration:1s;">
+    <div class="container mx-auto text-center text-white pt-8">
+      <h1 class="text-base font-normal uppercase opacity-60 max-w-sm mx-auto px-4">Past clients who have entrusted us with their projects</h1>
+      <span class="mt-4 block m-auto  max-w-sm invisible lg:visible xl:visible" style="height: 0.02rem; background-color: rgba(255, 255, 255, 0.096);"></span>
+
+    </div>
+    <div class="container mx-auto opacity-50 py-10">
+      <div class="grayscale animate-fade-in grid grid-cols sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-8 flex justify-center mx-auto items-center" style="filter: grayscale(1);">
+        <div class="mx-auto">
+          <img src="https://www.kesewi.com/images/client-1.png" alt="World-Health-Organization" class="max-h-10 mx-auto">
+        </div>
+        <div class="mx-auto">
+          <img src="https://www.kesewi.com/images/client-3.png" alt="Salesforce bootcamp Softinnovas" class="max-h-10 mx-auto">
+        </div>
+        <div class="mx-auto">
+          <img src="https://www.kesewi.com/images/client-4.png" alt="Focus On Filmemaking" class="max-h-10 mx-auto">
+        </div>
+        <div class="mx-auto">
+          <img src="./images/client-5.png" alt="ADAS" class="max-h-10 mx-auto p-0.5"> 
+        </div>
+        <div class="mx-auto">
+          <img src="https://www.kesewi.com/images/client-2.png" alt="Star Holding" class="max-h-10 mx-auto">
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+    <div id="ai-power" class="py-16 z-0">
       <div class="container mx-auto">
-        <div class="mx-auto flex justify-center items-center max-w-4xl items-center grayscale animate-fade-in grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-8 sm:justify-center h-40 sm:h-20" style="filter: grayscale(1);">
-          <img src="https://www.kesewi.com/images/client-1.png" alt="World-Health-Organization" class="h-full max-w-full opacity-0 logo m-auto" style="max-height: 45px;">
-          <img src="https://www.kesewi.com/images/client-3.png" alt="Salesforce bootcamp Softinnovas" class="h-full max-w-full opacity-0 logo m-auto" style="max-height: 45px;">
-          <img src="https://www.kesewi.com/images/client-4.png" alt="Focus On Filmemaking" class="h-full max-w-full opacity-0 logo m-auto" style="max-height: 45px;">
-          <img src="https://www.kesewi.com/images/client-2.png" alt="Star Holding" class="h-full max-w-full opacity-0 logo m-auto" style="max-height: 45px;">
+        <h1 class="text-4xl uppercase font-extrabold my-16 max-w-2xl m-auto text-white text-center animate-fade-in">Don't Miss The Rise of <span class="gradient-text">AI Power</span></h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-black">
+          <a href="https://www.adobe.com/sensei/generative-ai/firefly.html" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/tool-firefly.jpeg" alt="Adobe Firefly" class="h-48 object-cover rounded-t-lg">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Adobe Firefly</h2>
+              <p class="text-white opacity-50">By integrating AI-powered capabilities, Firefly would enable users to experiment, imagine, and create an infinite range of editable designs with ease.</p>
+            </div>
+          </a>
+          <a href="https://www.microsoft.com/en/microsoft-365?rtc=1" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/tool-microsoft-copilot.webp" alt="Microsoft-Copilot" class="h-48 object-cover rounded-t-lg">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Microsoft Copilot</h2>
+              <p class="text-white opacity-50">Microsoft 365 Copilot is an artificial intelligence assistant feature for Microsoft 365 applications and services</p>
+            </div>
+          </a>
+          <a href="https://openai.com/blog/chatgpt" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/tool-chatgpt.jpg" alt="ChatGpt" class="h-48 object-cover rounded-t-lg">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">ChatGpt</h2>
+              <p class="text-white opacity-50">ChatGPT is an intelligent chatbot that helps automate chat tasks. Its name is the acronym for Chat Generative Pre-trained Transformer.</p>
+            </div>
+          </a>
+          <a href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/tool-midjurney.webp" alt="Midjurney" class="h-48 object-cover rounded-t-lg">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Midjurney</h2>
+              <p class="text-white opacity-50">Midjourney creates unique images, making it perfect for artists and creatives to express themselves.</p>
+            </div>
+          </a>
+          <a href="https://www.synthesia.io" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/tool-synthesia.jpg" alt="Synthesia" class="h-48 object-cover rounded-t-lg">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Synthesia</h2>
+              <p class="text-white opacity-50">Synthesia is an AI video creation platform. Thousands of companies use it to create videos in 120 languages.</p>
+            </div>
+          </a>
+          <a href="https://beta.elevenlabs.io/" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/tool-elevenlabs.png" alt="Eleven-labs" class="h-48 object-cover rounded-t-lg">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Eleven labs</h2>
+              <p class="text-white opacity-50">The company specializes in natural-sounding speech synthesis and text-to-speech software, using artificial intelligence and deep learning.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="branding" class="py-16">
+      <div class="container mx-auto">
+        <h1 class="text-4xl uppercase font-extrabold my-16 max-w-2xl m-auto text-white text-center">And <span class="text-yellow-500">Branding</span></h1>
+        <div class="grid grid-cols-1 gap-8">
+          <a target="_blank" class="border-2 text-white  rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/tool-kesewi.jpg" alt="Kesewi-Branding-Consultancy" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Kesewi Branding Consultancy</h2>
+              <p class="text-white opacity-50">Kesewi builds brands that resonate with your audience. We help you tell your unique brand story in the most compelling way possible. Your brand has a unique story to tell, and we're committed to helping you craft a brand that truly resonates with your audience. By working closely with you, we'll help you identify your business goals, target audience, and unique selling propositions, and translate that into a branding strategy that sets you up for success.</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
 
-      <div id="ai-power" class="py-16">
-        <div class="container mx-auto">
-          <h1 class="text-4xl uppercase font-extrabold my-16 max-w-2xl m-auto text-white text-center">Don't Miss The Rise of <span class="gradient-text">AI Power</span></h1>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <a href="https://www.adobe.com/sensei/generative-ai/firefly.html" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/tool-firefly.jpeg" alt="Adobe Firefly" class="h-48 object-cover rounded-t-lg">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Adobe Firefly</h2>
-                <p class="text-white opacity-50">By integrating AI-powered capabilities, Firefly would enable users to experiment, imagine, and create an infinite range of editable designs with ease.</p>
-              </div>
-            </a>
-            <a href="https://www.microsoft.com/ro-ro/microsoft-365?rtc=1" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/tool-microsoft-copilot.webp" alt="Microsoft-Copilot" class="h-48 object-cover rounded-t-lg">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Microsoft Copilot</h2>
-                <p class="text-white opacity-50">Microsoft 365 Copilot is an artificial intelligence assistant feature for Microsoft 365 applications and services</p>
-              </div>
-            </a>
-            <a href="https://openai.com/blog/chatgpt" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/tool-chatgpt.jpg" alt="ChatGpt" class="h-48 object-cover rounded-t-lg">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">ChatGpt</h2>
-                <p class="text-white opacity-50">ChatGPT is an intelligent chatbot that helps automate chat tasks. Its name is the acronym for Chat Generative Pre-trained Transformer.</p>
-              </div>
-            </a>
-            <a href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/tool-midjurney.webp" alt="Midjurney" class="h-48 object-cover rounded-t-lg">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Midjurney</h2>
-                <p class="text-white opacity-50">Midjourney creates unique images, making it perfect for artists and creatives to express themselves.</p>
-              </div>
-            </a>
-            <a href="https://www.synthesia.io" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/tool-synthesia.jpg" alt="Synthesia" class="h-48 object-cover rounded-t-lg">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Synthesia</h2>
-                <p class="text-white opacity-50">Synthesia is an AI video creation platform. Thousands of companies use it to create videos in 120 languages.</p>
-              </div>
-            </a>
-            <a href="https://beta.elevenlabs.io/" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/tool-elevenlabs.png" alt="Eleven-labs" class="h-48 object-cover rounded-t-lg">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Eleven labs</h2>
-                <p class="text-white opacity-50">The company specializes in natural-sounding speech synthesis and text-to-speech software, using artificial intelligence and deep learning.</p>
-              </div>
-            </a>
-          </div>
+    <div id="projects" class="py-16">
+      <div class="container mx-auto py-8">
+        <div class="mx-auto max-w-screen-sm text-white text-center">
+          <h2 class="mb-4 text-4xl font-bold uppercase">Projects</h2>
+          <p class="mb-8 font-light lg:mb-16 text-lg opacity-50">Discover the wide array of projects we've completed, reflecting our commitment to innovation, quality, and customer satisfaction.</p>
+      </div> 
 
-        </div>
-      </div>
-
-      <div id="branding" class="py-16">
-        <div class="container mx-auto">
-          <h1 class="text-4xl uppercase font-extrabold my-16 max-w-2xl m-auto text-white text-center">And <span class="text-yellow-500">Branding</span></h1>
-          <div class="grid grid-cols-1 gap-8">
-            <a target="_blank" class="border-2 text-white  rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/tool-kesewi.jpg" alt="Kesewi-Branding-Consultancy" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Kesewi Branding Consultancy</h2>
-                <p class="text-white opacity-50">Kesewi builds brands that resonate with your audience. We help you tell your unique brand story in the most compelling way possible. Your brand has a unique story to tell, and we're committed to helping you craft a brand that truly resonates with your audience. By working closely with you, we'll help you identify your business goals, target audience, and unique selling propositions, and translate that into a branding strategy that sets you up for success.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="projects" class="py-16">
-        <div class="container mx-auto">
-          <h1 class="text-4xl uppercase font-extrabold my-16 max-w-2xl m-auto text-white text-center">Projects</h1>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pb-8">
-            <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/Projects/cover-ingigante.jpg" alt="Star Holding" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Ingigante</h2>
-                <p class="text-white opacity-50">Providing clients with a comprehensive range of real estate services, customized to meet their specific needs and goal.</p>
-              </div>
-            </a>
-            <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/Projects/cover-epicc.jpg" alt="SF Academy" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">EPICC</h2>
-                <p class="text-white opacity-50">We empower and protect coastal communities worldwide through lifesaving education, emergency preparedness, and resilience against evolving challenges.</p>
-              </div>
-            </a>
-            <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/Projects/cover-star2.jpg" alt="Star Holding" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Star Holding</h2>
-                <p class="text-white opacity-50">Star Holding is an innovative brand with exceptional customer service, setting the standard for excellence in its industry.</p>
-              </div>
-            </a>
-            <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/Projects/cover-sf.jpg" alt="SF Academy" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">SF Academy</h2>
-                <p class="text-white opacity-50">SF Academy is a premier training institution that specializes in Salesforce bootcamp programs for aspiring developers.</p>
-              </div>
-            </a>
-            <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/Projects/cover-kerwen.jpg" alt="Kerwen Tracking" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Kerwen Tracking</h2>
-                <p class="text-white opacity-50">Kerwen Parcel Tracking is a comprehensive app that enables users to track and monitor the delivery status of their packages in real-time.</p>
-              </div>
-            </a>
-            <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/Projects/cover-adas.jpg" alt="ADAS Textile" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">ADAS Textile</h2>
-                <p class="text-white opacity-50">ADAS Textile is a top-tier textile manufacturer known for producing high-quality, sustainable fabrics using advanced technology.</p>
-              </div>
-            </a>
-            <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/Projects/cover-samsaland2.jpg" alt="Samsaland" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Samsaland</h2>
-                <p class="text-white opacity-50">The establishment's main goal is to offer a unique culinary experience, with a focus on meat dishes accompanied by dough-based products.</p>
-              </div>
-            </a>
-            <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
-              <img src="images/Projects/cover-unispace2.jpg" alt="Unispace" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
-              <div class="p-4 flex-grow">
-                <h2 class="text-lg font-bold mb-2 uppercase">Unispace</h2>
-                <p class="text-white opacity-50">Unispace is a camping organization that provides a fun, entertaining, and educational experience for children and teenagers.</p>
-              </div>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <div id="services" class="bg-dark py-16 container text-white m-auto">
-        <div class="my-16">
-          <div class="text-center fader pb-14">
-            <h1 class="text-4xl font-bold uppercase">Upscale your position with us</h1>
-          </div>
-          <div class="flex flex-wrap justify-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8">
-            <div class="p-5 fader border-2 rounded-lg" style="border-color: rgb(39, 39, 39);">
-              <h4 class="text-6xl font-bold">01</h4><br>
-              <h2 class="text-3xl font-bold mb-2">Branding</h2>
-              <p class="text-lg opacity-50">We define brand as what people think, feel, and say about your business. (This differs from marketing, which is what you say about your business.)</p>
-              <br><a href="https://forms.gle/5A4aUCQmW77N21Tb7" target="_blank" class="gradient-text">Request form -></a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pb-8">
+          <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/Projects/cover-ingigante.jpg" alt="Star Holding" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Ingigante</h2>
+              <p class="text-white opacity-50">Providing clients with a comprehensive range of real estate services, customized to meet their specific needs and goal.</p>
             </div>
-            <div class="p-5 fader border-2 rounded-lg" style="border-color: rgb(39, 39, 39);">
-              <h4 class="text-6xl font-bold">02</h4><br>
-              <h2 class="text-3xl font-bold mb-2">UI & UX Design</h2>
-              <p class="text-lg opacity-50">Website and mobile app solutions with responsive User Experience & User Interface designs. Websites are the most essential part for every brand.</p>
-              <br><a href="https://forms.gle/Fx3AyQtA9ourf8rC7" target="_blank" class="gradient-text">Request form -></a>
+          </a>
+          <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/Projects/cover-epicc.jpg" alt="SF Academy" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">EPICC</h2>
+              <p class="text-white opacity-50">We empower and protect coastal communities worldwide through lifesaving education, emergency preparedness, and resilience against evolving challenges.</p>
             </div>
-            <div class="p-5 fader border-2 rounded-lg" style="border-color: rgb(39, 39, 39);">
-              <h4 class="text-6xl font-bold">03</h4><br>
-              <h2 class="text-3xl font-bold mb-2">Animography</h2>
-              <p class="text-lg opacity-50">Commercial, explainer animation and motion graphics for your business, product, service or direct for brand awareness. It helps you to explain your service in a short time.</p>
-              <br><a href="https://forms.gle/1r128af5WHF6jV1A8" target="_blank" class="gradient-text">Request form -></a>
+          </a>
+          <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/Projects/cover-star2.jpg" alt="Star Holding" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Star Holding</h2>
+              <p class="text-white opacity-50">Star Holding is an innovative brand with exceptional customer service, setting the standard for excellence in its industry.</p>
             </div>
+          </a>
+          <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/Projects/cover-sf.jpg" alt="SF Academy" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">SF Academy</h2>
+              <p class="text-white opacity-50">SF Academy is a premier training institution that specializes in Salesforce bootcamp programs for aspiring developers.</p>
+            </div>
+          </a>
+          <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/Projects/cover-kerwen.jpg" alt="Kerwen Tracking" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Kerwen Tracking</h2>
+              <p class="text-white opacity-50">Kerwen Parcel Tracking is a comprehensive app that enables users to track and monitor the delivery status of their packages in real-time.</p>
+            </div>
+          </a>
+          <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/Projects/cover-adas.jpg" alt="ADAS Textile" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">ADAS Textile</h2>
+              <p class="text-white opacity-50">ADAS Textile is a top-tier textile manufacturer known for producing high-quality, sustainable fabrics using advanced technology.</p>
+            </div>
+          </a>
+          <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/Projects/cover-samsaland2.jpg" alt="Samsaland" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Samsaland</h2>
+              <p class="text-white opacity-50">The establishment's main goal is to offer a unique culinary experience, with a focus on meat dishes accompanied by dough-based products.</p>
+            </div>
+          </a>
+          <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
+            <img src="images/Projects/cover-unispace2.jpg" alt="Unispace" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
+            <div class="p-4 flex-grow">
+              <h2 class="text-lg font-bold mb-2 uppercase">Unispace</h2>
+              <p class="text-white opacity-50">Unispace is a camping organization that provides a fun, entertaining, and educational experience for children and teenagers.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="testimonials" class="bg-black bg-dark py-16 container text-white m-auto">
+      <div class="px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+          <div class="mx-auto max-w-screen-sm">
+              <h2 class="mb-4 text-4xl font-bold uppercase">From Our Clients</h2>
+              <p class="mb-8 font-light lg:mb-16 text-lg opacity-50">Read firsthand experiences from our satisfied customers who have seen remarkable improvements in their work and life through our service.</p>
+          </div> 
+          <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
+              <figure class="flex flex-col justify-center items-center p-8 text-center bg-black border-b md:p-12 lg:border-r" style="border-color: rgb(39, 39, 39);">
+                  <blockquote class="mx-auto mb-8 max-w-2xl">
+                      <h3 class="gradient-text uppercase text-lg font-semibold">They gave me EVERYTHING I needed</h3>
+                      <p class="my-4 opacity-80">Kesewi really care about your company’s success and went out of their way to provide me support during my launch.</p>
+                      <p class="my-4 opacity-80">They developed a custom and easy to use website for my real estate business and developed mock-ups and designs for merchandise, advertisements, and digital media. They truly gave me EVERYTHING I needed to launch my brand.</p>
+                      <p class="my-4 opacity-80">The best part is they actually delivered MORE than they had quoted me. I highly recommend them and will use them for all future projects.</p>
+                    </blockquote>
+                  <figcaption class="flex justify-center items-center space-x-3">
+                      <img class="w-9 h-9 rounded-full" src="./images/testimonials/chance-pinkerton.jpg" alt="profile picture">
+                      <div class="opacity-50 space-y-0.5 font-medium dark:text-white text-left">
+                          <div>Chance Pinkerton</div>
+                          <div class="text-sm font-light">Founder of Ingigante</div>
+                      </div>
+                  </figcaption>    
+              </figure>
+              <figure class="flex flex-col justify-center items-center p-8 text-center bg-black border-b md:p-12" style="border-color: rgb(39, 39, 39);">
+                  <blockquote class="mx-auto mb-8 max-w-2xl">
+                      <h3 class="gradient-text uppercase text-lg font-semibold">truly top-notch</h3>
+                      <p class="my-4 opacity-80">We were really pleased to have received a service beyond our expectations from the beginning to the end of the branding process.</p>
+                      <p class="my-4 opacity-80">The quality of work, as well as the standard of communication from company representatives, was truly top-notch.</p>
+                      <p class="my-4 opacity-80">A big thank you and kudos to the team. We urge you to maintain your high standards...👏👏👏</p>
+                  </blockquote>
+                  <figcaption class="flex justify-center items-center space-x-3">
+                      <img class="w-9 h-9 rounded-full" src="./images/testimonials/cumali.jpg" alt="profile picture">
+                      <div class="opacity-50 space-y-0.5 font-medium dark:text-white text-left">
+                          <div>Cumali</div>
+                          <div class="text-sm font-light">Founder of Samsaland</div>
+                      </div>
+                  </figcaption>    
+              </figure>
+              <figure class="flex flex-col justify-center items-center p-8 text-center bg-black border-b lg:border-b-0 md:p-12 lg:border-r" style="border-color: rgb(39, 39, 39);">
+                  <blockquote class="mx-auto mb-8 max-w-2xl">
+                      <h3 class="gradient-text uppercase text-lg font-semibold">Mindblowing workflow and variants</h3>
+                      <p class="my-4 opacity-80">As a marketing specialist, I've collaborated with numerous teams, but this one truly stands out.</p>
+                      <p class="my-4 opacity-80">What impressed me the most was their ability to understand and internalize our brand vision, then manifest it in their creative and innovative work.</p>
+                      <p class="my-4 opacity-80">I want to express my sincere appreciation for their remarkable efforts. This team has a true ability to set a benchmark in the industry.</p>
+                  </blockquote>
+                  <figcaption class="flex justify-center items-center space-x-3">
+                      <img class="w-9 h-9 rounded-full" src="./images/testimonials/Jake-ratermann.jpg" alt="profile picture">
+                      <div class="opacity-50 space-y-0.5 font-medium dark:text-white text-left">
+                          <div>Jake Ratermann</div>
+                          <div class="text-sm font-light">Marketing Specialist</div>
+                      </div>
+                  </figcaption>    
+              </figure>
+              <figure class="flex flex-col justify-center items-center p-8 text-center bg-black md:p-12" style="border-color: rgb(39, 39, 39);">
+                  <blockquote class="mx-auto mb-8 max-w-2xl">
+                      <h3 class="gradient-text uppercase text-lg font-semibold">Efficient Collaborating</h3>
+                      <p class="my-4 opacity-80">This team has displayed exceptional professionalism and expertise across multiple dimensions. </p>
+                      <p class="my-4 opacity-80">From branding to web design, every bit of their work has been a game-changer for us. Their creativity and understanding of our vision took our organization and public image to the next level.</p>
+                      <p class="my-4 opacity-80">They have demonstrated the impact of their work beyond measure, and for that, they deserve our highest commendation.</p>
+                  </blockquote>
+                  <figcaption class="flex justify-center items-center space-x-3">
+                      <img class="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                      <div class="opacity-50 space-y-0.5 font-medium dark:text-white text-left">
+                          <div>Joseph McFall</div>
+                          <div class="text-sm font-light">CTO at EPICC</div>
+                      </div>
+                  </figcaption>    
+              </figure>
+          </div>
+      </div>
+    </div>
+
+    <div id="services" class="bg-dark py-16 container text-white m-auto">
+      <div class="my-16">
+        <div class="text-center fader pb-14">
+          <h1 class="text-4xl font-bold uppercase">Upscale your position with us</h1>
+        </div>
+        <div class="flex flex-wrap justify-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+          <div class="p-5 fader border-2 rounded-lg" style="border-color: rgb(39, 39, 39);">
+            <h4 class="text-6xl font-bold">01</h4><br>
+            <h2 class="text-3xl font-bold mb-2">Branding</h2>
+            <p class="text-lg opacity-50">We define brand as what people think, feel, and say about your business. (This differs from marketing, which is what you say about your business.)</p>
+            <br><a href="https://forms.gle/5A4aUCQmW77N21Tb7" target="_blank" class="gradient-text">Request form -></a>
+          </div>
+          <div class="p-5 fader border-2 rounded-lg" style="border-color: rgb(39, 39, 39);">
+            <h4 class="text-6xl font-bold">02</h4><br>
+            <h2 class="text-3xl font-bold mb-2">UI & UX Design</h2>
+            <p class="text-lg opacity-50">Website and mobile app solutions with responsive User Experience & User Interface designs. Websites are the most essential part for every brand.</p>
+            <br><a href="https://forms.gle/Fx3AyQtA9ourf8rC7" target="_blank" class="gradient-text">Request form -></a>
+          </div>
+          <div class="p-5 fader border-2 rounded-lg" style="border-color: rgb(39, 39, 39);">
+            <h4 class="text-6xl font-bold">03</h4><br>
+            <h2 class="text-3xl font-bold mb-2">Animography</h2>
+            <p class="text-lg opacity-50">Commercial, explainer animation and motion graphics for your business, product, service or direct for brand awareness. It helps you to explain your service in a short time.</p>
+            <br><a href="https://forms.gle/1r128af5WHF6jV1A8" target="_blank" class="gradient-text">Request form -></a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="bg-black py-16 items-center">
-       
-      </div>
-
-      <div id="footer" class="py-16 border-t-2" style="border-color: rgb(39, 39, 39);">
-        <div class="container mx-auto">
-         <div class="pb-2">
-          <img class="h-6 mx-auto md:mx-0 lg:mx-0 xl:mx-0" src="images/logo-gray.png" alt="Logo">
+    <div id="footer" class="bg-black py-16 border-t-2" style="border-color: rgb(39, 39, 39);">
+      <div class="container mx-auto">
+       <div class="pb-2">
+        <img class="h-6 mx-auto md:mx-0 lg:mx-0 xl:mx-0" src="images/logo-gray.png" alt="Logo">
+       </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div class="text-white rounded-lg flex flex-col order-3 md:order-1 lg:order-1 xl:order-1">
+             <div class="p-4 flex-grow text-center md:text-left lg:text-left xl:text-left">
+              <p class="text-white opacity-50 pb-2">Kesewi Branding Consultancy</h2>
+              <p class="text-white opacity-50 pb-2">2918 Avenue i, Brooklyn, NY</p>
+              <p class="text-white opacity-50">© 2022 Kesewi Branding Colsultancy</p>
+            </div>
+          </div>
+          <div class="text-white rounded-lg content-center items-center order-2 md:order-2 lg:order-2 xl:order-2">
+            <div class="p-4 flex-grow list-none opacity-50 text-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-2">
+              <li><a href="#ai-power" class="hover:text-gray-400">AI Power</a></li>
+              <li><a href="#branding" class="hover:text-gray-400">Branding</a></li>
+              <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+              <li><a href="#services" class="hover:text-gray-400">Services</a></li>
+              <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+            </div>
          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
-            <div class="text-white rounded-lg flex flex-col order-3 md:order-1 lg:order-1 xl:order-1">
-               <div class="p-4 flex-grow text-center md:text-left lg:text-left xl:text-left">
-                <p class="text-white opacity-50 pb-2">Kesewi Branding Consultancy</h2>
-                <p class="text-white opacity-50 pb-2">2918 Avenue i, Brooklyn, NY</p>
-                <p class="text-white opacity-50">© 2022 Kesewi Branding Colsultancy</p>
-              </div>
-            </div>
-            <div class="text-white rounded-lg content-center items-center order-2 md:order-2 lg:order-2 xl:order-2">
-              <div class="p-4 flex-grow list-none opacity-50 text-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-2">
-                <li><a href="#ai-power" class="hover:text-gray-400">AI Power</a></li>
-                <li><a href="#branding" class="hover:text-gray-400">Branding</a></li>
-                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
-                <li><a href="#services" class="hover:text-gray-400">Services</a></li>
-                <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
-              </div>
-           </div>
-           <div class="text-white rounded-lg flex flex-col items-center order-1 md:order-3 lg:order-3 xl:order-3">
-              <div class="p-4 flex-grow text-center text-white opacity-50 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-2">
-                <a href="mailto:contact@kesewi.com"><p class="hover:text-gray-400">contact@kesewi.com</p></a>
-                <a href="https://www.linkedin.com/company/kesewi" target="_blank"><p class="hover:text-gray-400">Linkedin/Kesewi</p></a>
-                <a href="https://www.instagram.com/thekesewi/" target="_blank"><p class="hover:text-gray-400">Instagram/thekesewi</p></a>
-              </div>
+         <div class="text-white rounded-lg flex flex-col items-center order-1 md:order-3 lg:order-3 xl:order-3">
+            <div class="p-4 flex-grow text-center text-white opacity-50 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-2">
+              <a href="mailto:contact@kesewi.com"><p class="hover:text-gray-400">contact@kesewi.com</p></a>
+              <a href="https://www.linkedin.com/company/kesewi" target="_blank"><p class="hover:text-gray-400">Linkedin/Kesewi</p></a>
+              <a href="https://www.instagram.com/thekesewi/" target="_blank"><p class="hover:text-gray-400">Instagram/thekesewi</p></a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div id="section-container"></div>
-      <script>
-        $(function(){
-          $("#section-container").load("section.html");
+    <script>
+      $(function(){
+        $("#section-container").load("section.html");
+      });
+    </script>
+    
+
+    <script>
+        function setMaxHeight(element) {
+          // Set maximum height of element to 80% of screen height
+          const maxHeight = window.innerHeight * 0.8;
+          element.style.maxHeight = `${maxHeight}px`;
+        }
+      
+        // Call setMaxHeight for each section element
+        const sectionElements = document.querySelectorAll("section");
+        sectionElements.forEach((element) => {
+          setMaxHeight(element);
         });
-      </script>
-      
+    </script>
 
 
+  <script>
+    const element = document.getElementById("my-element-1");
 
+document.addEventListener("mousemove", function(event) {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  
+  const elementX = element.offsetLeft + (element.offsetWidth / 2);
+  const elementY = element.offsetTop + (element.offsetHeight / 2);
+  
+  const distanceX = mouseX - elementX;
+  const distanceY = mouseY - elementY;
+  
+  const moveX = distanceX * 0.01;
+  const moveY = distanceY * 0.01;
+  
+  element.style.transform = "translate(" + moveX + "px, " + moveY + "px)";
+});
+  </script>
 
-      <script>
-          function setMaxHeight(element) {
-            // Set maximum height of element to 80% of screen height
-            const maxHeight = window.innerHeight * 0.8;
-            element.style.maxHeight = `${maxHeight}px`;
-          }
-        
-          // Call setMaxHeight for each section element
-          const sectionElements = document.querySelectorAll("section");
-          sectionElements.forEach((element) => {
-            setMaxHeight(element);
-          });
-      </script>
-      
-      
+  <script>
+    const element2 = document.getElementById("my-element-2");
+
+document.addEventListener("mousemove", function(event) {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  
+  const element2X = element2.offsetLeft + (element2.offsetWidth / 2);
+  const element2Y = element2.offsetTop + (element2.offsetHeight / 2);
+  
+  const distanceX = mouseX - element2X;
+  const distanceY = mouseY - element2Y;
+  
+  const moveX = distanceX * 0.01;
+  const moveY = distanceY * 0.01;
+  
+  element2.style.transform = "translate(" + moveX + "px, " + moveY + "px)";
+});
+  </script>
+
 </body>
 </html>
-          
