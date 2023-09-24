@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Branding Consultancy">
+    <meta name="description" content="Elevate your brand with Kesewi: Your trusted brand identity agency. We specialize in crafting impactful brand experiences and designs. Discover Kesewi's expertise in building strong brand identities.">
     <title>Kesewi | Branding Consultancy</title>
 
     <link rel="icon" type="image/png" href="./images/favicon/180.png" sizes="16x16">
@@ -25,7 +25,7 @@
     <div class="overlay(ocuk)"></div>
       <nav class="container mx-auto flex items-center justify-between md:justify-center lg:justify-center xl:justify-center min-h-10 px-7">
         <div class="flex items-center py-3">
-          <a href="/"><img class="h-4 pr-16" src="https://i.ibb.co/jv5xf6k/logo-light.png" alt="Logo" class="h-8 mr-8"></a>
+          <a href="/"><img class="h-6 pr-16" src="./images/logo-white.png" alt="Logo" class="h-8 mr-8"></a>
           <ul class="hidden md:flex items-center space-x-8 gap-10 text-sm font-extralight opacity-90">
             <li><a href="#ai-power" class="hover:text-gray-400">AI Power</a></li>
             <li><a href="#branding" class="hover:text-gray-400">Branding</a></li>
@@ -36,10 +36,16 @@
         </div>
         <button class="bg-#00FF00 hover:bg-gray-700 text-white font-semibold py-3 px-4 rounded-md md:hidden"><a href="contact.html" class="text-sm font-extralight opacity-90">Contact</a></button>
       </nav>
-      <div class="text-center bg-[#eb673b] py-1">
+      <!-- <div class="text-center bg-[#eb673b] py-1">
         <p class="inline animate-fade-in">Enjoy a 30% discount on all services until August 30 | <p class="inline font-bold" id="countdown"></p></p>
-      </div>
+      </div> -->
   </header>
+
+  <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/kesewi/30min?hide_gdpr_banner=1&background_color=171717&text_color=e8e8e8&primary_color=ff8400', text: 'FREE CONSULTING', color: '#eb673b', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
 
   <section id="hero" class="h-screen flex justify-center pb-8 items-center min-h-screen overflow-x-hidden">
     <div class="absolute animate-fade-in max-w-screen" style="z-index: -1;">
@@ -65,19 +71,19 @@
     <div class="container mx-auto opacity-50 py-10">
       <div class="grayscale animate-fade-in grid grid-cols sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-8 flex justify-center mx-auto items-center" style="filter: grayscale(1);">
         <div class="mx-auto">
-          <img src="https://www.kesewi.com/images/client-1.png" alt="World-Health-Organization" class="max-h-10 mx-auto">
+          <img src="./images/client-1.png" alt="World-Health-Organization" class="max-h-10 mx-auto">
         </div>
         <div class="mx-auto">
-          <img src="https://www.kesewi.com/images/client-3.png" alt="Salesforce bootcamp Softinnovas" class="max-h-10 mx-auto">
+          <img src="./images/client-3.png" alt="Salesforce bootcamp Softinnovas" class="max-h-10 mx-auto">
         </div>
         <div class="mx-auto">
-          <img src="https://www.kesewi.com/images/client-4.png" alt="Focus On Filmmaking" class="max-h-10 mx-auto">
+          <img src="./images/client-4.png" alt="Focus On Filmmaking" class="max-h-10 mx-auto">
         </div>
         <div class="mx-auto">
           <img src="./images/client-5.png" alt="ADAS" class="max-h-10 mx-auto p-0.5"> 
         </div>
         <div class="mx-auto">
-          <img src="https://www.kesewi.com/images/client-2.png" alt="Star Holding" class="max-h-10 mx-auto">
+          <img src="./images/client-2.png" alt="Star Holding" class="max-h-10 mx-auto">
         </div>
         
         
@@ -96,56 +102,90 @@
         <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
           <img src="images/Projects/cover-ingigante.jpg" alt="Star Holding" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
           <div class="p-4 flex-grow">
-            <h2 class="text-lg font-bold mb-2 uppercase">Ingigante <div id="web-design" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #f3817f47;color: #f3817ff7;">Web Design</div><div id="branding" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #dcf3f547;color: #d8e3e7f7;">Branding</div></h2>
+            <h2 class="text-lg font-semibold mb-2 uppercase flex-col">Ingigante</h2>
+            <div>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #dcf3f547;color: #d8e3e7f7;width: fit-content; pointer-events: none;">Branding</button>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #f3817f47;color: #f3817ff7;width: fit-content; pointer-events: none;">Web Design</button>
+            </div>
             <p class="text-white opacity-50">Providing clients with a comprehensive range of real estate services, customized to meet their specific needs and goal.</p>
           </div>
         </a>
         <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
           <img src="images/Projects/cover-epicc.jpg" alt="SF Academy" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
           <div class="p-4 flex-grow">
-            <h2 class="text-lg font-bold mb-2 uppercase">EPICC <div id="web-design" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #f3817f47;color: #f3817ff7;">Web Design</div><div id="branding" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #dcf3f547;color: #d8e3e7f7;">Branding</div></h2>
+            <h2 class="text-lg font-semibold mb-2 uppercase flex-col">EPICC</h2>
+            <div>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #dcf3f547;color: #d8e3e7f7;width: fit-content; pointer-events: none;">Branding</button>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #f3817f47;color: #f3817ff7;width: fit-content; pointer-events: none;">Web Design</button>
+            </div>
             <p class="text-white opacity-50">We empower and protect coastal communities worldwide through lifesaving education, emergency preparedness, and resilience against evolving challenges.</p>
           </div>
         </a>
         <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
           <img src="images/Projects/cover-star2.jpg" alt="Star Holding" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
           <div class="p-4 flex-grow">
-            <h2 class="text-lg font-bold mb-2 uppercase">Star Holding  <div id="branding" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #dcf3f547;color: #d8e3e7f7;">Branding</div></h2>
+            <h2 class="text-lg font-semibold mb-2 uppercase flex-col">Star Holding</h2>
+            <div>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #dcf3f547;color: #d8e3e7f7;width: fit-content; pointer-events: none;">Branding</button>
+            </div>
             <p class="text-white opacity-50">Star Holding is an innovative brand with exceptional customer service, setting the standard for excellence in its industry.</p>
           </div>
         </a>
         <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
           <img src="images/Projects/cover-sf.jpg" alt="SF Academy" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
           <div class="p-4 flex-grow">
-            <h2 class="text-lg font-bold mb-2 uppercase">SF Academy <div id="web-design" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #f3817f47;color: #f3817ff7;">Web Design</div><div id="branding" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #dcf3f547;color: #d8e3e7f7;">Branding</div></h2>
+            <h2 class="text-lg font-semibold mb-2 uppercase flex-col">SF Academy</h2>
+            <div>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #dcf3f547;color: #d8e3e7f7;width: fit-content; pointer-events: none;">Branding</button>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #f3817f47;color: #f3817ff7;width: fit-content; pointer-events: none;">Web Design</button>
+            </div>
             <p class="text-white opacity-50">SF Academy is a premier training institution that specializes in Salesforce bootcamp programs for aspiring developers.</p>
           </div>
         </a>
         <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
           <img src="images/Projects/cover-kerwen.jpg" alt="Kerwen Tracking" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
           <div class="p-4 flex-grow">
-            <h2 class="text-lg font-bold mb-2 uppercase">Kerwen Tracking <div id="web-design" class="inline text-[0.75rem] ml-2 font-light rounded-sm p-1 px-2" style="background-color: #f3817f47;color: #f3817ff7;">Web Design</div><div id="branding" class="inline text-[0.75rem] ml-2  font-light rounded-sm p-1 px-2" style="background-color: #dcf3f547;color: #d8e3e7f7;">Branding</div><div id="videography" class="inline text-[0.75rem] ml-2 font-light rounded-sm p-1 px-2" style="background-color: #46a6ef47;color: #9edbf2f7;">Commercials</div><div id="videography" class="inline text-[0.75rem] ml-2 font-light rounded-sm p-1 px-2" style="background-color: #9546ef47;color: #bb9ef2f7;">UI & UX</div></h2>
+            <h2 class="text-lg font-semibold mb-2 uppercase flex-col">Kerwen Tracking</h2>
+            <div>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #dcf3f547;color: #d8e3e7f7;width: fit-content; pointer-events: none;">Branding</button>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #f3817f47;color: #f3817ff7;width: fit-content; pointer-events: none;">Web Design</button>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #f37fd247;color: #f37fb9f7;width: fit-content; pointer-events: none;">UI & UX</button>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #7f98f347;color: #7fadf3f7;width: fit-content; pointer-events: none;">Commercial Ad</button>
+
+            </div>
             <p class="text-white opacity-50">Kerwen Parcel Tracking is a comprehensive app that enables users to track and monitor the delivery status of their packages in real-time.</p>
           </div>
         </a>
         <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
           <img src="images/Projects/cover-adas.jpg" alt="ADAS Textile" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
           <div class="p-4 flex-grow">
-            <h2 class="text-lg font-bold mb-2 uppercase">ADAS Textile <div id="web-design" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #f3817f47;color: #f3817ff7;">Web Design</div><div id="branding" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #dcf3f547;color: #d8e3e7f7;">Branding</div></h2>
+            <h2 class="text-lg font-semibold mb-2 uppercase flex-col">ADAS Textile</h2>
+            <div>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #dcf3f547;color: #d8e3e7f7;width: fit-content; pointer-events: none;">Branding</button>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #f3817f47;color: #f3817ff7;width: fit-content; pointer-events: none;">Web Design</button>
+            </div>
             <p class="text-white opacity-50">ADAS Textile is a top-tier textile manufacturer known for producing high-quality, sustainable fabrics using advanced technology.</p>
           </div>
         </a>
         <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
           <img src="images/Projects/cover-samsaland2.jpg" alt="Samsaland" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
           <div class="p-4 flex-grow">
-            <h2 class="text-lg font-bold mb-2 uppercase">Samsaland <div id="web-design" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #f3817f47;color: #f3817ff7;">Web Design</div><div id="branding" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #dcf3f547;color: #d8e3e7f7;">Branding</div></h2>
+            <h2 class="text-lg font-semibold mb-2 uppercase flex-col">Samsaland</h2>
+            <div>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #dcf3f547;color: #d8e3e7f7;width: fit-content; pointer-events: none;">Branding</button>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #f3817f47;color: #f3817ff7;width: fit-content; pointer-events: none;">Web Design</button>
+            </div>
+
             <p class="text-white opacity-50">The establishment's main goal is to offer a unique culinary experience, with a focus on meat dishes accompanied by dough-based products.</p>
           </div>
         </a>
         <a  target="_blank" class="border-2 text-white shadow-md hover:shadow-xl rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
           <img src="images/Projects/cover-unispace2.jpg" alt="Unispace" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
           <div class="p-4 flex-grow">
-            <h2 class="text-lg font-bold mb-2 uppercase">Unispace <div id="branding" class="inline text-[0.75rem] ml-2 m-auto font-light rounded-sm p-1 px-2" style="background-color: #dcf3f547;color: #d8e3e7f7;">Branding</div></h2>
+            <h2 class="text-lg font-semibold mb-2 uppercase flex-col">Unispace</h2>
+            <div>
+              <button id="branding" class=" text-[0.75rem] font-light rounded-sm py-[1px] px-2 uppercase mb-4" style="background-color: #dcf3f547;color: #d8e3e7f7;width: fit-content; pointer-events: none;">Branding</button>
+            </div>
             <p class="text-white opacity-50">Unispace is a camping organization that provides a fun, entertaining, and educational experience for children and teenagers.</p>
           </div>
         </a>
@@ -161,42 +201,42 @@
           <a href="https://www.adobe.com/sensei/generative-ai/firefly.html" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
             <img src="images/tool-firefly.jpeg" alt="Adobe Firefly" class="h-48 object-cover rounded-t-lg">
             <div class="p-4 flex-grow">
-              <h2 class="text-lg font-bold mb-2 uppercase">Adobe Firefly</h2>
+              <h2 class="text-lg font-bold mb-2 uppercase flex-col">Adobe Firefly</h2>
               <p class="text-white opacity-50">By integrating AI-powered capabilities, Firefly would enable users to experiment, imagine, and create an infinite range of editable designs with ease.</p>
             </div>
           </a>
           <a href="https://www.microsoft.com/en/microsoft-365?rtc=1" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
             <img src="images/tool-microsoft-copilot.webp" alt="Microsoft-Copilot" class="h-48 object-cover rounded-t-lg">
             <div class="p-4 flex-grow">
-              <h2 class="text-lg font-bold mb-2 uppercase">Microsoft Copilot</h2>
+              <h2 class="text-lg font-bold mb-2 uppercase flex-col">Microsoft Copilot</h2>
               <p class="text-white opacity-50">Microsoft 365 Copilot is an artificial intelligence assistant feature for Microsoft 365 applications and services</p>
             </div>
           </a>
           <a href="https://openai.com/blog/chatgpt" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
             <img src="images/tool-chatgpt.jpg" alt="ChatGpt" class="h-48 object-cover rounded-t-lg">
             <div class="p-4 flex-grow">
-              <h2 class="text-lg font-bold mb-2 uppercase">ChatGpt</h2>
+              <h2 class="text-lg font-bold mb-2 uppercase flex-col">ChatGpt</h2>
               <p class="text-white opacity-50">ChatGPT is an intelligent chatbot that helps automate chat tasks. Its name is the acronym for Chat Generative Pre-trained Transformer.</p>
             </div>
           </a>
           <a href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
             <img src="images/tool-midjurney.webp" alt="Midjurney" class="h-48 object-cover rounded-t-lg">
             <div class="p-4 flex-grow">
-              <h2 class="text-lg font-bold mb-2 uppercase">Midjurney</h2>
+              <h2 class="text-lg font-bold mb-2 uppercase flex-col">Midjurney</h2>
               <p class="text-white opacity-50">Midjourney creates unique images, making it perfect for artists and creatives to express themselves.</p>
             </div>
           </a>
           <a href="https://www.synthesia.io" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
             <img src="images/tool-synthesia.jpg" alt="Synthesia" class="h-48 object-cover rounded-t-lg">
             <div class="p-4 flex-grow">
-              <h2 class="text-lg font-bold mb-2 uppercase">Synthesia</h2>
+              <h2 class="text-lg font-bold mb-2 uppercase flex-col">Synthesia</h2>
               <p class="text-white opacity-50">Synthesia is an AI video creation platform. Thousands of companies use it to create videos in 120 languages.</p>
             </div>
           </a>
           <a href="https://beta.elevenlabs.io/" target="_blank" class="border-2 text-white shadow-md hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
             <img src="images/tool-elevenlabs.png" alt="Eleven-labs" class="h-48 object-cover rounded-t-lg">
             <div class="p-4 flex-grow">
-              <h2 class="text-lg font-bold mb-2 uppercase">Eleven labs</h2>
+              <h2 class="text-lg font-bold mb-2 uppercase flex-col">Eleven labs</h2>
               <p class="text-white opacity-50">The company specializes in natural-sounding speech synthesis and text-to-speech software, using artificial intelligence and deep learning.</p>
             </div>
           </a>
@@ -212,15 +252,13 @@
           <a target="_blank" class="border-2 text-white  rounded-lg flex flex-col"style="border-color: rgb(39, 39, 39);">
             <img src="images/tool-kesewi.jpg" alt="Kesewi-Branding-Consultancy" class="h-48 object-cover rounded-t-lg" style="min-height: 20rem;">
             <div class="p-4 flex-grow">
-              <h2 class="text-lg font-bold mb-2 uppercase">Kesewi Branding Consultancy</h2>
+              <h2 class="text-lg font-bold mb-2 uppercase flex-col">Kesewi Branding Consultancy</h2>
               <p class="text-white opacity-50">Kesewi builds brands that resonate with your audience. We help you tell your unique brand story in the most compelling way possible. Your brand has a unique story to tell, and we're committed to helping you craft a brand that truly resonates with your audience. By working closely with you, we'll help you identify your business goals, target audience, and unique selling propositions, and translate that into a branding strategy that sets you up for success.</p>
             </div>
           </a>
         </div>
       </div>
     </div>
-
-    
 
     <div id="testimonials" class="bg-black bg-dark py-16 container text-white m-auto">
       <div class="px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
@@ -262,15 +300,15 @@
               <figure class="flex flex-col justify-center items-center p-8 text-center bg-black border-b lg:border-b-0 md:p-12 lg:border-r" style="border-color: rgb(39, 39, 39);">
                   <blockquote class="mx-auto mb-8 max-w-2xl">
                       <h3 class="gradient-text uppercase text-lg font-semibold">Mindblowing workflow and variants</h3>
-                      <p class="my-4 opacity-80">As a marketing specialist, I've collaborated with numerous teams, but this one truly stands out.</p>
+                      <p class="my-4 opacity-80">I've collaborated with numerous teams for branding services but this one truly stands out.</p>
                       <p class="my-4 opacity-80">What impressed me the most was their ability to understand and internalize our brand vision, then manifest it in their creative and innovative work.</p>
                       <p class="my-4 opacity-80">I want to express my sincere appreciation for their remarkable efforts. This team has a true ability to set a benchmark in the industry.</p>
                   </blockquote>
                   <figcaption class="flex justify-center items-center space-x-3">
-                      <img class="w-9 h-9 rounded-full" src="./images/testimonials/Jake-ratermann.jpg" alt="profile picture">
+                      <img class="w-9 h-9 rounded-full" src="./images/testimonials/softinnovas.jpg" alt="profile picture">
                       <div class="opacity-50 space-y-0.5 font-medium dark:text-white text-left">
-                          <div>Jake Ratermann</div>
-                          <div class="text-sm font-light">Marketing Specialist</div>
+                          <div>Vepa O</div>
+                          <div class="text-sm font-light">CEO at Soft Innovas</div>
                       </div>
                   </figcaption>    
               </figure>
@@ -282,7 +320,7 @@
                       <p class="my-4 opacity-80">They have demonstrated the impact of their work beyond measure, and for that, they deserve our highest commendation.</p>
                   </blockquote>
                   <figcaption class="flex justify-center items-center space-x-3">
-                      <img class="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                      <img class="w-9 h-9 rounded-full" src="./images/testimonials/palmer.jpg" alt="profile picture">
                       <div class="opacity-50 space-y-0.5 font-medium dark:text-white text-left">
                           <div>Palmer Bonebrake</div>
                           <div class="text-sm font-light">CEO at EPICC</div>
@@ -293,7 +331,7 @@
       </div>
     </div>
 
-    <div id="services" class="bg-dark py-16 container text-white m-auto">
+    <div id="services" class="bg-dark py-8 container text-white m-auto">
       <div class="my-16">
         <div class="text-center fader pb-14">
           <h1 class="text-4xl font-bold uppercase">Upscale your position with us</h1>
@@ -321,9 +359,15 @@
       </div>
     </div>
     
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/tg--25/kesewi?hide_gdpr_banner=1&background_color=121212&text_color=e0dfdf&primary_color=ff7d00" style="min-width:320px;height:700px;min-height:1000px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 
+<br><br>
+<br><br>
 
-    <div id="footer" class="bg-black py-16 border-t-2" style="border-color: rgb(39, 39, 39);">
+    <div id="footer" class="bg-black py-16 border-t-2 mt-4" style="border-color: rgb(39, 39, 39);">
       <div class="container mx-auto">
        <div class="pb-2">
         <img class="h-6 mx-auto md:mx-0 lg:mx-0 xl:mx-0" src="images/logo-gray.png" alt="Logo">
@@ -356,11 +400,10 @@
       </div>
     </div>
     
-    <div class="bg-yellow-500" id="countdown"></div>
 
     <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 01, 2023 08:00:01").getTime();
+var countDownDate = new Date("Aug 31, 2023 00:00:01").getTime();
 
 // Update the countdown every second
 var countdownInterval = setInterval(function() {

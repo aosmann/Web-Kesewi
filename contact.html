@@ -23,57 +23,90 @@
                 <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
               </ul>
             </div>
-            <button class="bg-#00FF00 hover:bg-gray-700 text-white font-semibold py-3 px-4 rounded-md md:hidden"><a href="contact.html" class="text-sm font-extralight opacity-90">Contact</a></button>
-          </nav>
+            <script>
+              function onClick(e) {
+                e.preventDefault();
+                grecaptcha.ready(function() {
+                  grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+                      // Add your logic to submit to your backend server here.
+                      <button class="bg-#00FF00 hover:bg-gray-700 text-white font-semibold py-3 px-4 rounded-md md:hidden"><a href="contact.html" class="text-sm font-extralight opacity-90">Contact</a></button>
+
+                  });
+                });
+              }
+          </script>
+            <button class="g-recaptcha" 
+            data-sitekey="reCAPTCHA_site_key" 
+            data-callback='onSubmit' 
+            data-action='submit'>Submit</button>          </nav>
       </header>
 
-      <div id="services" class="bg-dark py-16 container text-white m-auto">
-        <div class="my-16">
-          <div class="text-center fader pb-14">
-            <h1 class="text-4xl font-bold uppercase">Drop us a line.</h1>
-          </div>
-          <div class="flex flex-wrap justify-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 max-w-2xl m-auto gap-8">
-            <div class="p-5 fader border-2 rounded-lg" style="border-color: rgb(39, 39, 39);">
-              <h2 class="text-3xl font-bold mb-2">Contact</h2>
-              <form method="POST" action="submit.php">
-                <div>
-                  <p for="name" class="block text-sm font-medium text-white">
-                    Full Name
-                  </p>
-                  <div class="mt-1">
-                    <input id="name" name="name" type="text" required autocomplete="name" class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 bg-transparent border-2 outline-none rounded-md"style="border-color: rgba(243, 243, 243, 0.421);">
-                  </div>
-                </div>
-        
-                <div class="mt-6">
-                  <p for="email" class="block text-sm font-medium text-white">
-                    Email Address
-                  </p>
-                  <div class="mt-1">
-                    <input id="email" name="email" type="email" required autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 bg-transparent border-2 outline-none rounded-md"style="border-color: rgba(243, 243, 243, 0.421);"">
-                  </div>
-                </div>
-        
-                <div class="mt-6">
-                  <p for="message" class="block text-sm font-medium text-white">
-                    Message
-                  </p>
-                  <div class="mt-1">
-                    <textarea id="message" name="message" required class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 border-gray-300 bg-transparent border-2 outline-none h-full rounded-md"style="border-color: rgba(243, 243, 243, 0.421);""></textarea>
-                  </div>
-                </div>
-        
-                <div class="mt-6">
-                  <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
-                    Send Message
-                  </button>
-                </div>
-              </form>
-            </div>
-           
-          </div>
-        </div>
+        <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/kesewi/30min?hide_gdpr_banner=1&background_color=171717&text_color=e8e8e8&primary_color=ff8400', text: 'FREE CONSULTING', color: '#eb673b', textColor: '#ffffff', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
+
+      
+      <div class="text-center fader text-white pt-10 mt-10">
+        <h1 class="text-4xl font-bold uppercase">Get Free Consulting</h1>
       </div>
+
+
+
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/tg--25/kesewi?hide_gdpr_banner=1&background_color=121212&text_color=e0dfdf&primary_color=ff7d00" style="min-width:320px;height:700px;min-height:1000px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+
+<div id="services" class="bg-dark pb-0 container text-white m-auto">
+  <div class="my-10">
+    <div class="text-center fader pb-14">
+      <h1 class="text-4xl font-bold uppercase">Drop us a line.</h1>
+    </div>
+    <div class="flex flex-wrap justify-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 max-w-2xl m-auto gap-8">
+      <div class="p-5 fader border-2 rounded-lg" style="border-color: rgb(39, 39, 39);">
+        <h2 class="text-3xl font-bold mb-2">Contact</h2>
+        <form method="POST" action="submit.php">
+          <div>
+            <p for="name" class="block text-sm font-medium text-white">
+              Full Name
+            </p>
+            <div class="mt-1">
+              <input id="name" name="name" type="text" required autocomplete="name" class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 bg-transparent border-2 outline-none rounded-md"style="border-color: rgba(243, 243, 243, 0.421);">
+            </div>
+          </div>
+  
+          <div class="mt-6">
+            <p for="email" class="block text-sm font-medium text-white">
+              Email Address
+            </p>
+            <div class="mt-1">
+              <input id="email" name="email" type="email" required autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 bg-transparent border-2 outline-none rounded-md"style="border-color: rgba(243, 243, 243, 0.421);"">
+            </div>
+          </div>
+  
+          <div class="mt-6">
+            <p for="message" class="block text-sm font-medium text-white">
+              Message
+            </p>
+            <div class="mt-1">
+              <textarea id="message" name="message" required class="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 border-gray-300 bg-transparent border-2 outline-none h-full rounded-md"style="border-color: rgba(243, 243, 243, 0.421);""></textarea>
+            </div>
+          </div>
+  
+          <div class="mt-6">
+            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<br><br>
 
        <div id="footer" class="py-16 border-t-2" style="border-color: rgb(39, 39, 39);">
         <div class="container mx-auto">
@@ -113,5 +146,7 @@
     </div>
 
     <script src="submit.js"></script>
+
+    
   </body>
 </html>

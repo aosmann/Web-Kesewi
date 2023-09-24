@@ -3,8 +3,56 @@
 @tailwind utilities;
  
  @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+   
+ @font-face {  
+  font-family: "nohemi";
+     src: url("./font/Nohemi-Thin.ttf");
+     font-weight: 100;
+ }
+ @font-face {
+  font-family: "nohemi";
+  src: url("./font/Nohemi-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "nohemi";
+  src: url("./font/Nohemi-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "nohemi";
+  src: url("./font/Nohemi-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "nohemi";
+  src: url("./font/Nohemi-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "nohemi";
+  src: url("./font/Nohemi-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "nohemi";
+  src: url("./font/Nohemi-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "nohemi";
+  src: url("./font/Nohemi-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "nohemi";
+  src: url("./font/Nohemi-Black.ttf");
+  font-weight: 900;
+}
 
-                
+
+
+
 
 .animate-fade-in {
     opacity: 0;
@@ -22,14 +70,21 @@
     }
   }
 
-h1, p {
-	font-family: "SF Pro Display", sans-serif !important;
-  }
+.o{
+  font-family: "nohemi", sans-serif !important;
+  letter-spacing: .1rem !important;
+}
+
+h1, p{
+  font-family: "SF Pro Display", sans-serif !important;
+}
 
   body{
 	background: #000000;
   overflow-x: hidden;
   max-width: 100vw;
+  font-family: 'SF Pro Display', sans-serif !important;
+  
   }
 
   .logo {
@@ -111,3 +166,7 @@ h1, p {
   .scroll-container::-webkit-scrollbar-thumb {
     background-color: #888; /* Customize the scrollbar thumb color */
   }
+
+
+
+
